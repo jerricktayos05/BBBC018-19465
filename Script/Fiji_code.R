@@ -1,8 +1,8 @@
 # Replace with your own chosen phenotype and image ID
 phenotype <- "Actin blebs"
-image_id <- "YOUR_IMAGE_FIELD_ID"
+image_id <- "19465"
 # Read the Fiji Results CSV (no R packages needed)
-d <- read.csv("data/fiji_results.csv", check.names = FALSE)
+d <- read.csv("fiji_data.csv", check.names = FALSE)
 needed <- c("Area", "Mean", "Circ.", "AR")
 if (!all(needed %in% names(d))) {
   stop("Missing Fiji columns. Recheck Set Measurements.")
